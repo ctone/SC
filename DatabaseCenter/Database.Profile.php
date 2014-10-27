@@ -22,7 +22,7 @@ class ProfileDB
 	public function UpdatePassword(string $message)
 	{
 		$MySQL = MySQL::Instance();
-		$sql = "UPDATE profile SET `Messege` = '$pass' WHERE ID = 1";
+		$sql = "UPDATE profile SET `Messege` = '$message' WHERE ID = 1";
 		$data = $MySQL->ExecNonQuery($sql);
 		return $data;
 	}
